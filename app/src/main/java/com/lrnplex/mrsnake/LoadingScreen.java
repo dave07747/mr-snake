@@ -29,6 +29,8 @@ public class LoadingScreen extends Screen {
         Assets.setBackArrow(g.newPixmap("backArrow.png", Graphics.PixmapFormat.ARGB4444));
         Assets.setHighScore(g.newPixmap("highscore.png", Graphics.PixmapFormat.ARGB4444));
 
+        Assets.setTheme1(g.newPixmap("headright1.png", Graphics.PixmapFormat.ARGB4444));
+        Assets.setTheme2(g.newPixmap("headright2.png", Graphics.PixmapFormat.ARGB4444));
 
         Assets.setFood1(g.newPixmap("food1.png", Graphics.PixmapFormat.ARGB4444));
         Assets.setFood2(g.newPixmap("food2.png", Graphics.PixmapFormat.ARGB4444));
@@ -41,6 +43,15 @@ public class LoadingScreen extends Screen {
                 Assets.setHeadRight(g.newPixmap("headright1.png", Graphics.PixmapFormat.ARGB4444));
                 Assets.setTail(g.newPixmap("tail1.png", Graphics.PixmapFormat.ARGB4444));
                 Assets.setBackground(g.newPixmap("background1.png", Graphics.PixmapFormat.ARGB4444));
+
+                break;
+            case 2:
+                Assets.setHeadDown(g.newPixmap("headdown2.png", Graphics.PixmapFormat.ARGB4444));
+                Assets.setHeadUp(g.newPixmap("headup2.png", Graphics.PixmapFormat.ARGB4444));
+                Assets.setHeadLeft(g.newPixmap("headleft2.png", Graphics.PixmapFormat.ARGB4444));
+                Assets.setHeadRight(g.newPixmap("headright2.png", Graphics.PixmapFormat.ARGB4444));
+                Assets.setTail(g.newPixmap("tail2.png", Graphics.PixmapFormat.ARGB4444));
+                Assets.setBackground(g.newPixmap("background2.png", Graphics.PixmapFormat.ARGB4444));
 
                 break;
             default:

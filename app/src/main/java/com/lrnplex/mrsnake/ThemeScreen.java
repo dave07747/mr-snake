@@ -18,6 +18,7 @@ public class ThemeScreen extends Screen {
     public void update(float deltaTime) {
         List<Input.TouchEvent> touchEvents = game.getInput().getTouchEvents();
         game.getInput().getKeyEvents();
+        Graphics g = game.getGraphics();
 
         int len = touchEvents.size();
         for (int i = 0; i < len; ++i) {
@@ -29,6 +30,24 @@ public class ThemeScreen extends Screen {
                     game.setScreen(new MainMenuScreen(game));
                     return;
                 }
+                if(inBounds(event, game.getGraphics().getWidth()/3, 350, 100, 100)){
+                    Assets.setHeadDown(g.newPixmap("headdown1.png", Graphics.PixmapFormat.ARGB4444));
+                    Assets.setHeadUp(g.newPixmap("headup1.png", Graphics.PixmapFormat.ARGB4444));
+                    Assets.setHeadLeft(g.newPixmap("headleft1.png", Graphics.PixmapFormat.ARGB4444));
+                    Assets.setHeadRight(g.newPixmap("headright1.png", Graphics.PixmapFormat.ARGB4444));
+                    Assets.setTail(g.newPixmap("tail1.png", Graphics.PixmapFormat.ARGB4444));
+                    Assets.setBackground(g.newPixmap("background1.png", Graphics.PixmapFormat.ARGB4444));
+                    game.save();
+                }
+                if(inBounds(event,2 * game.getGraphics().getWidth()/3, 350, 100, 100)){
+                    Assets.setHeadDown(g.newPixmap("headdown2.png", Graphics.PixmapFormat.ARGB4444));
+                    Assets.setHeadUp(g.newPixmap("headup2.png", Graphics.PixmapFormat.ARGB4444));
+                    Assets.setHeadLeft(g.newPixmap("headleft2.png", Graphics.PixmapFormat.ARGB4444));
+                    Assets.setHeadRight(g.newPixmap("headright2.png", Graphics.PixmapFormat.ARGB4444));
+                    Assets.setTail(g.newPixmap("tail2.png", Graphics.PixmapFormat.ARGB4444));
+                    Assets.setBackground(g.newPixmap("background2.png", Graphics.PixmapFormat.ARGB4444));
+                    game.save();
+                }
             }
         }
     }
@@ -39,6 +58,9 @@ public class ThemeScreen extends Screen {
 
         g.drawPixmap(Assets.getBackground(), 0, 0);
         g.drawPixmap(Assets.getBackArrow(), 10, 10);
+
+        g.drawPixmap(Assets.getTheme1(), g.getWidth()/3, 350);
+        g.drawPixmap(Assets.getTheme2(), 2 * g.getWidth()/3, 350);
 
     }
 
@@ -57,5 +79,13 @@ public class ThemeScreen extends Screen {
     public void dispose() {
         music.stop();
         music.dispose();
+    }
+
+    private boolean inBounds(Input.TouchEvent event, int x, int y, int width, int height){
+        if(event.x > x && event.x < x + width - 1 &&
+                event.y > y && event.y < y + height -1)
+            return true;
+        else
+            return false;
     }
 }

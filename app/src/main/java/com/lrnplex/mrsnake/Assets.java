@@ -32,9 +32,28 @@ public class Assets {
     private static Pixmap backArrow;
     private static Pixmap highScore;
 
+    private static Pixmap theme1;
+    private static Pixmap theme2;
+
     private static Sound fall;
     private static Sound click;
     private static Sound eat;
+
+    public static Pixmap getTheme1() {
+        return theme1;
+    }
+
+    public static void setTheme1(Pixmap theme1) {
+        Assets.theme1 = theme1;
+    }
+
+    public static Pixmap getTheme2() {
+        return theme2;
+    }
+
+    public static void setTheme2(Pixmap theme2) {
+        Assets.theme2 = theme2;
+    }
 
     public static Sound getEat() {
         return eat;

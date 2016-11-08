@@ -2,8 +2,8 @@ package com.lrnplex.mrsnake;
 
 
 public class World {
-    static final int WORLD_WIDTH = 160;
-    static final int WORLD_HEIGHT = 90;
+    static final int WORLD_WIDTH = 16;
+    static final int WORLD_HEIGHT = 13;
     static final int SCORE_INCREMENT = 1;
     static final float TICK_INITIAL = 0.5f;
     static final float TICK_DECREMENT = 0.05f;

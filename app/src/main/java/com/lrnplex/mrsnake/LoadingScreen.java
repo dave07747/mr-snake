@@ -26,8 +26,30 @@ public class LoadingScreen extends Screen {
         Assets.setGameOver(g.newPixmap("GameOver.png", Graphics.PixmapFormat.ARGB4444));
         Assets.setReady(g.newPixmap("Ready.png", Graphics.PixmapFormat.ARGB4444));
         Assets.setNumbers(g.newPixmap("Numbers.png", Graphics.PixmapFormat.ARGB4444));
+        Assets.setBackArrow(g.newPixmap("backArrow.png", Graphics.PixmapFormat.ARGB4444));
+        Assets.setHighScore(g.newPixmap("highscore.png", Graphics.PixmapFormat.ARGB4444));
 
 
+        Assets.setFood1(g.newPixmap("food1.png", Graphics.PixmapFormat.ARGB4444));
+        Assets.setFood2(g.newPixmap("food2.png", Graphics.PixmapFormat.ARGB4444));
+
+        switch (Settings.theme){
+            case 1:
+                Assets.setHeadDown(g.newPixmap("headdown1.png", Graphics.PixmapFormat.ARGB4444));
+                Assets.setHeadUp(g.newPixmap("headup1.png", Graphics.PixmapFormat.ARGB4444));
+                Assets.setHeadLeft(g.newPixmap("headleft1.png", Graphics.PixmapFormat.ARGB4444));
+                Assets.setHeadRight(g.newPixmap("headdright1.png", Graphics.PixmapFormat.ARGB4444));
+                Assets.setTail(g.newPixmap("tail1.png", Graphics.PixmapFormat.ARGB4444));
+                Assets.setBackground(g.newPixmap("background1.png", Graphics.PixmapFormat.ARGB4444));
+
+                break;
+            default:
+                Assets.setHeadDown(g.newPixmap("headdown1.png", Graphics.PixmapFormat.ARGB4444));
+                Assets.setHeadUp(g.newPixmap("headup1.png", Graphics.PixmapFormat.ARGB4444));
+                Assets.setHeadLeft(g.newPixmap("headleft1.png", Graphics.PixmapFormat.ARGB4444));
+                Assets.setHeadRight(g.newPixmap("headdright1.png", Graphics.PixmapFormat.ARGB4444));
+                Assets.setTail(g.newPixmap("tail1.png", Graphics.PixmapFormat.ARGB4444));
+        }
 
         Assets.setClick(game.getAudio().newSound("click.ogg"));
         Assets.setFall(game.getAudio().newSound("fall.mp3"));

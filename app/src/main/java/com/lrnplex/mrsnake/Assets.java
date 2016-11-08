@@ -21,18 +21,101 @@ public class Assets {
     private static Pixmap themeScreen;
     private static Pixmap resume;
     private static Pixmap quit;
-    private static Pixmap ball;
+    private static Pixmap headDown;
+    private static Pixmap headUp;
+    private static Pixmap headLeft;
+    private static Pixmap headRight;
+    private static Pixmap food1;
+    private static Pixmap food2;
+    private static Pixmap tail;
+    private static Pixmap background;
+    private static Pixmap backArrow;
+    private static Pixmap highScore;
 
     private static Sound fall;
     private static Sound click;
 
-    public static Pixmap getBall() {
-        return ball;
+    public static Pixmap getHighScore() {
+        return highScore;
     }
 
-    public static void setBall(Pixmap ball) {
-        Assets.ball = ball;
+    public static void setHighScore(Pixmap highScore) {
+        Assets.highScore = highScore;
     }
+
+    public static Pixmap getBackArrow() {
+        return backArrow;
+    }
+
+    public static void setBackArrow(Pixmap backArrow) {
+        Assets.backArrow = backArrow;
+    }
+
+    public static Pixmap getBackground() {
+        return background;
+    }
+
+    public static void setBackground(Pixmap background) {
+        Assets.background = background;
+    }
+
+    public static Pixmap getFood1() {
+        return food1;
+    }
+
+    public static void setFood1(Pixmap food1) {
+        Assets.food1 = food1;
+    }
+
+    public static Pixmap getFood2() {
+        return food2;
+    }
+
+    public static void setFood2(Pixmap food2) {
+        Assets.food2 = food2;
+    }
+
+    public static Pixmap getTail() {
+        return tail;
+    }
+
+    public static void setTail(Pixmap tail) {
+        Assets.tail = tail;
+    }
+
+    public static Pixmap getHeadDown() {
+        return headDown;
+    }
+
+    public static void setHeadDown(Pixmap headDown) {
+        Assets.headDown = headDown;
+    }
+
+    public static Pixmap getHeadUp() {
+        return headUp;
+    }
+
+    public static void setHeadUp(Pixmap headUp) {
+        Assets.headUp = headUp;
+    }
+
+    public static Pixmap getHeadLeft() {
+        return headLeft;
+    }
+
+    public static void setHeadLeft(Pixmap headLeft) {
+        Assets.headLeft = headLeft;
+    }
+
+    public static Pixmap getHeadRight() {
+        return headRight;
+    }
+
+    public static void setHeadRight(Pixmap headRight) {
+        Assets.headRight = headRight;
+    }
+
+
 
     public static Pixmap getResume() {
         return resume;

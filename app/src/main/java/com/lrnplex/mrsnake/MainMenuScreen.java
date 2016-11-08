@@ -54,7 +54,7 @@ public class MainMenuScreen extends Screen {
                 }
 
                 if(inBounds(event, 580, 540, 120, 120)){    // Check for touch on Play scoring
-                    // instruction for score screen goes here
+                    game.setScreen(new Highscore(game));
                     Log.d("Update: ", "Touched scoring");
                     if(Settings.soundEnabled)
                         Assets.getClick().play(1);

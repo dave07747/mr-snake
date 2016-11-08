@@ -6,6 +6,6 @@ package com.lrnplex.mrsnake;
 
 public class Settings {
     public static boolean soundEnabled = true;
-    public static int highscore = 0;
+    public static int highscore = 1;
     public static int theme = 1;
 }

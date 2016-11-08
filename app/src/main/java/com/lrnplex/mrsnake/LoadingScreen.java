@@ -38,7 +38,7 @@ public class LoadingScreen extends Screen {
                 Assets.setHeadDown(g.newPixmap("headdown1.png", Graphics.PixmapFormat.ARGB4444));
                 Assets.setHeadUp(g.newPixmap("headup1.png", Graphics.PixmapFormat.ARGB4444));
                 Assets.setHeadLeft(g.newPixmap("headleft1.png", Graphics.PixmapFormat.ARGB4444));
-                Assets.setHeadRight(g.newPixmap("headdright1.png", Graphics.PixmapFormat.ARGB4444));
+                Assets.setHeadRight(g.newPixmap("headright1.png", Graphics.PixmapFormat.ARGB4444));
                 Assets.setTail(g.newPixmap("tail1.png", Graphics.PixmapFormat.ARGB4444));
                 Assets.setBackground(g.newPixmap("background1.png", Graphics.PixmapFormat.ARGB4444));
 
@@ -47,12 +47,15 @@ public class LoadingScreen extends Screen {
                 Assets.setHeadDown(g.newPixmap("headdown1.png", Graphics.PixmapFormat.ARGB4444));
                 Assets.setHeadUp(g.newPixmap("headup1.png", Graphics.PixmapFormat.ARGB4444));
                 Assets.setHeadLeft(g.newPixmap("headleft1.png", Graphics.PixmapFormat.ARGB4444));
-                Assets.setHeadRight(g.newPixmap("headdright1.png", Graphics.PixmapFormat.ARGB4444));
+                Assets.setHeadRight(g.newPixmap("headright1.png", Graphics.PixmapFormat.ARGB4444));
                 Assets.setTail(g.newPixmap("tail1.png", Graphics.PixmapFormat.ARGB4444));
+                Assets.setBackground(g.newPixmap("background1.png", Graphics.PixmapFormat.ARGB4444));
+
         }
 
         Assets.setClick(game.getAudio().newSound("click.ogg"));
         Assets.setFall(game.getAudio().newSound("fall.mp3"));
+        Assets.setEat(game.getAudio().newSound("eat.ogg"));
         //End loading assets
 
         game.setScreen(new MainMenuScreen(game));

@@ -36,7 +36,7 @@ public class Snake {
         parts.add(new SnakePart(end.x, end.y));
     }
 
-    public void davance(){
+    public void advance(){
         SnakePart head = parts.get(0);
 
         int len = parts.size()-1;
@@ -57,12 +57,12 @@ public class Snake {
             head.x += 1;
 
         if(head.x < 0)
-            head.x = 15;
-        if(head.x > 15)
+            head.x = 19;
+        if(head.x > 19)
             head.x = 0;
         if(head.y < 0)
-            head.y = 12;
-        if(head.y > 12)
+            head.y = 8;
+        if(head.y > 8)
             head.y = 0;
     }
 

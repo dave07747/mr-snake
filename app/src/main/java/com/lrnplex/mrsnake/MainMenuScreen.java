@@ -32,7 +32,7 @@ public class MainMenuScreen extends Screen {
         for(int i = 0; i < len; ++i){
             TouchEvent event = touchEvents.get(i);
             if(event.type == TouchEvent.TOUCH_UP){
-                if(inBounds(event, 430, 540, 120 , 120)){   // Check for touch on sound
+                if(inBounds(event, 440, 540, 115 , 115)){   // Check for touch on sound
                     Settings.soundEnabled = !Settings.soundEnabled;
                     Log.d("Update: ", "Toggled Sound");
                     music = game.getMusic();
@@ -53,7 +53,7 @@ public class MainMenuScreen extends Screen {
                     return;
                 }
 
-                if(inBounds(event, 580, 540, 120, 120)){    // Check for touch on Play scoring
+                if(inBounds(event, 590, 540, 115, 115)){    // Check for touch on Play scoring
                     game.setScreen(new Highscore(game));
                     Log.d("Update: ", "Touched scoring");
                     if(Settings.soundEnabled)
@@ -61,7 +61,7 @@ public class MainMenuScreen extends Screen {
                     return;
                 }
 
-                if(inBounds(event, 740, 540, 120, 120)){    // Check for touch on theme
+                if(inBounds(event, 750, 540, 115, 115)){    // Check for touch on theme
                     Log.d("Update: ", "Touched theme");
                     game.setScreen(new ThemeScreen(game));
                     if(Settings.soundEnabled)
@@ -86,7 +86,7 @@ public class MainMenuScreen extends Screen {
 
         //color = BackgroundColor.nextColor();
 
-        g.clear(0x00ffff); //Temp background color
+        g.drawPixmap(Assets.getBackground(), 0, 0);
 
         g.drawPixmap(Assets.getTitle(), 250, 20 ); // Display title
         g.drawPixmap(Assets.getStart(), 540, 300); // Display start button

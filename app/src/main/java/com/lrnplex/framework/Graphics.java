@@ -17,6 +17,8 @@ public interface Graphics {
 
     void drawPixmap(Pixmap pixmap, int x, int y);
 
+    void drawLine(int x, int y, int x2, int y2, int color);
+
     int getWidth();
 
     int getHeight();

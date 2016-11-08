@@ -34,6 +34,15 @@ public class Assets {
 
     private static Sound fall;
     private static Sound click;
+    private static Sound eat;
+
+    public static Sound getEat() {
+        return eat;
+    }
+
+    public static void setEat(Sound eat) {
+        Assets.eat = eat;
+    }
 
     public static Pixmap getHighScore() {
         return highScore;
